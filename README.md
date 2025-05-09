@@ -1,6 +1,6 @@
 # LibroConsole
 
-Une application console Java permettant de gérer une bibliothèque avec les fonctionnalités de gestion des livres, des utilisateurs, et du prêt de livres. Développée dans le cadre du **TP n°2 Java (L2)** par **Lovasoa David**.
+Une application console Java permettant de gérer une bibliothèque avec les fonctionnalités de gestion des livres, des utilisateurs, et du prêt de livres.
 
 ##  Objectifs
 

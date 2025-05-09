@@ -64,29 +64,8 @@ Ce projet vise à appliquer les concepts de :
 1. Ouvrir le projet dans Eclipse (ou n'importe quel éditeur qui supporte Java)
 2. Démarrer XAMPP (Apache + MySQL)
 3. Creer une base de donnée "bibliothèque" et lance ça :
-CREATE TABLE Livres (
-    id INT PRIMARY KEY AUTO_INCREMENT,
-    titre VARCHAR(100),
-    auteur VARCHAR(100),
-    annee INT,
-    genre VARCHAR(50)
-);
-CREATE TABLE Utilisateurs (
-    id INT PRIMARY KEY AUTO_INCREMENT,
-    nom VARCHAR(100),
-    email VARCHAR(100),
-    telephone VARCHAR(20)
-);
-CREATE TABLE Prets (
-    id INT PRIMARY KEY AUTO_INCREMENT,
-    utilisateur_id INT,
-    livre_id INT,
-    date_emprunt DATE,
-    date_retour DATE,
-    FOREIGN KEY (utilisateur_id) REFERENCES Utilisateurs(id),
-    FOREIGN KEY (livre_id) REFERENCES Livres(id)
+ <pre> ```sql CREATE TABLE Livres ( id INT PRIMARY KEY AUTO_INCREMENT, titre VARCHAR(100), auteur VARCHAR(100), annee INT, genre VARCHAR(50) ); CREATE TABLE Utilisateurs ( id INT PRIMARY KEY AUTO_INCREMENT, nom VARCHAR(100), email VARCHAR(100), telephone VARCHAR(20) ); CREATE TABLE Prets ( id INT PRIMARY KEY AUTO_INCREMENT, utilisateur_id INT, livre_id INT, date_emprunt DATE, date_retour DATE, FOREIGN KEY (utilisateur_id) REFERENCES Utilisateurs(id), FOREIGN KEY (livre_id) REFERENCES Livres(id) ); ``` </pre>
 
-);
 4. Vérifier que le driver JDBC est bien dans le dossier `/lib`
 5. Relier le mysqldriver dans buildPath
 5. Exécuter le fichier `GestionBibliotheque.java`

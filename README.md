@@ -83,6 +83,6 @@ Email : lovasoarm@gmail.com
 
 ---
 
-## 📌 Remarques
+##  Remarques
 
 - Ce projet est entièrement en **console** (pas d’interface Swing ou JavaFX).

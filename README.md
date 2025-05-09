@@ -2,6 +2,9 @@
 
 Une application console Java permettant de gérer une bibliothèque avec les fonctionnalités de gestion des livres, des utilisateurs, et du prêt de livres.
 
+![Aperçu de l'application](assets/screenshot.PNG)
+
+
 ##  Objectifs
 
 Ce projet vise à appliquer les concepts de :
